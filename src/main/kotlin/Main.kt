@@ -1,6 +1,6 @@
 fun main() {
     //Basics
-//    basicsOfKotlin()
+//   basicsOfKotlin()
 
     //nullability
 //    checkNullability()
@@ -9,5 +9,13 @@ fun main() {
 //    conditionalFunction()
 
     //When
-    whenFunction()
+  //  whenFunction()
+
+    //Loops
+//    loops()
+//    loops2()
+//    loops3()
+
+    //Functions
+    reverseString()
 }

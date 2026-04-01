@@ -33,4 +33,10 @@ fun basicsOfKotlin() {
 
     val isEven = toInt % 2 == 0
     println("$input is even: $isEven")
+
+    //arrays
+    val numArray = intArrayOf(2,4,6,8,10)
+    println(numArray.contentToString())
+    println(numArray.size)
+    println(numArray.lastIndex)
 }
