@@ -17,5 +17,8 @@ fun main() {
 //    loops3()
 
     //Functions
-    reverseString()
+//    reverseString()
+
+//    Lambdas
+    lambdaFunctions()
 }
