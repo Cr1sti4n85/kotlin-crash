@@ -20,5 +20,12 @@ fun main() {
 //    reverseString()
 
 //    Lambdas
-    lambdaFunctions()
+//    lambdaFunctions()
+
+    //Clases
+
+//   workingWithClasses()
+//   applyingInterface()
+//   abstractClasses()
+//     openClasses()
 }
