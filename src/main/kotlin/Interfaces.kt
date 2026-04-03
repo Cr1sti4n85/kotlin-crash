@@ -6,7 +6,7 @@ interface Shape {
 }
 
 //implementing interface on data class
-data class AcuteTriange(val base: Double, val height: Double): Shape {
+data class EquilateralTriange(val base: Double, val height: Double): Shape {
 
     override val area = base.times(height) / 2
 
@@ -24,7 +24,7 @@ data class Circle(val radius: Double): Shape {
 }
 
 fun applyingInterface( ){
-    val acuteTriange = AcuteTriange(9.0, 12.0)
+    val acuteTriange = EquilateralTriange(9.0, 12.0)
     println(acuteTriange.area)
     println(acuteTriange.diameter)
 
@@ -37,11 +37,14 @@ fun applyingInterface( ){
 }
 
 fun sumAreas(vararg shapes: Shape): Double {
-    for (shape in shapes) {
-        when (shape){
-            is Circle -> println("A circle")
-            is AcuteTriange -> println("A rectangle")
+    for ((i, element) in shapes.withIndex()) {
+        val output = when (element){
+            is Circle -> "El objeto en la posicion $i es un circulo"
+            is EquilateralTriange -> "El objeto en la posicion $i es un triangulo equilatero"
+            else -> "Otro"
         }
+        println(output)
+
     }
     return shapes.sumOf { shape -> shape.area }
 }

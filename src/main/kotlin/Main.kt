@@ -25,7 +25,13 @@ fun main() {
     //Clases
 
 //   workingWithClasses()
-//   applyingInterface()
+//applyingInterface()
 //   abstractClasses()
-//     openClasses()
+//    openClasses()
+//    workingWithSealed()
+//    enums()
+//    checkList()
+
+    //GENERICS
+    generics()
 }
